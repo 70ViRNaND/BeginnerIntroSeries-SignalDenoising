@@ -1,4 +1,4 @@
-# SignalDenoising with Matlab
+# Beginner Introduction to SignalDenoising with Matlab
 This Repo contain files (also code) for Signal Denoising. The code itself may subject to change.
 
 Disclaimer: use matlab R2015A or above
