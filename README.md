@@ -25,4 +25,4 @@ Disclaimer:
     - Data Format: standard
     - Toolbox: Export signals as CSV
 
-- use matlab R2015A or above
+- Use matlab R2015A or above
