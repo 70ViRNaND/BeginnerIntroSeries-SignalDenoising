@@ -29,7 +29,7 @@ h =windowed;
 
 fh = (fftshift(fft(h,nfft2)));
 fhfshift = (-nfft2/2:nfft2/2-1)*(fs/nfft2);
-fhpowershift = abs(fh).^2/1; %Update Terbaru
+fhpowershift = abs(fh).^2/1;
 
 mul = fypowershift'.*fhpowershift; %frequency domain operation
 convo = conv(y,h); %time domain operation 
