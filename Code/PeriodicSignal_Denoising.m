@@ -71,7 +71,7 @@ plot(frequency_filtered_fft,amplitude_filtered_fft)
 
 suptitle('Signal Denoising by Element-Wise Product in Frequency Domain')
 
-%% - GAUSSIAN WINDOW  gausswin(order+1,alpha)';
+%% - GAUSSIAN WINDOW  
 
 fs = 2000; %sampling frequency to generate time domain signal
 ts = 1/fs;%1/fs; %increment of time
