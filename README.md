@@ -36,10 +36,6 @@ Disclaimer:
   
   Then you can click sample.csv to download the data.
 
-  
-  
--  ECG Denoising code will be posted soon (Hopefully before end of May 2020). 
-
 
 
 - Use matlab R2015A or above
@@ -54,4 +50,4 @@ TODO:
   
   
   
-  - Upload ECG_Denoising.m and ECG_Convolution_Theorem_Proof.m
+  - Upload ECG_Denoising.m and ECG_Convolution_Theorem_Proof.m before end of May 2020
