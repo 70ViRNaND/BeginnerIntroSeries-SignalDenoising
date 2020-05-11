@@ -54,7 +54,7 @@ frequency_window = Fs/2*linspace(0,1,L/2+1);
 
 % compute Hadamard multiplication (element-wise product) between fft's
 filtered_fft = signal_fft.*window_fft;
-amplitude_filtered_fft =  4*abs(filtered_fft(1:(L/2+1)));
+amplitude_filtered_fft =  2*abs(filtered_fft(1:(L/2+1)));
 frequency_filtered_fft = Fs/2*linspace(0,1,L/2+1);
 
 %Plot 2
@@ -127,7 +127,7 @@ frequency_window = Fs/2*linspace(0,1,L/2+1);
 
 % compute Hadamard multiplication (element-wise product) between fft's
 filtered_fft = signal_fft.*window_fft;
-amplitude_filtered_fft =  4*abs(filtered_fft(1:(L/2+1)));
+amplitude_filtered_fft =  2*abs(filtered_fft(1:(L/2+1)));
 frequency_filtered_fft = Fs/2*linspace(0,1,L/2+1);
 
 %Plot 2
