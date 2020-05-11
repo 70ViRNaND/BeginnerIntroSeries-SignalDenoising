@@ -51,3 +51,11 @@ TODO:
   
   
   - Upload ECG_Denoising.m and ECG_Convolution_Theorem_Proof.m before end of May 2020
+  
+  
+  
+  - Upload digestable tutorial on PDF format
+  
+  
+  
+  - Upload digestable tutorial on MP4 format
