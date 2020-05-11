@@ -18,6 +18,11 @@ Disclaimer:
   
   
   
+- The convolution theorem proof code is adopted from MATLAB user Arkaprabho Pal response here:
+  https://se.mathworks.com/matlabcentral/answers/356984-confusion-about-convolution-theorem-in-matlab  
+  
+  
+  
 - The Complete ECG data (noisy and clean) is taken from Physionet's ECG Database here: 
   https://archive.physionet.org/cgi-bin/atm/ATM
 
