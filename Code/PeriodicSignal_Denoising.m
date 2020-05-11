@@ -83,8 +83,8 @@ time = 0 : ts : tmeasure-ts; %time vector
 y = sin(2.*pi.*4.*time) + cos(2.*pi.*8.*time)+ sin(2.*pi.*16.*time);
 
 %Window
-alpha = 20;
-order = 2048;
+alpha = 10;
+order = 2000;
 w =  gausswin(order+1,alpha)'; %matlab definition of gaussian window
 filtered = conv(y,w);  %linear convolution cuz it's real vector 
 subset_filtered = filtered(1000:2999); %make sure length of filtered signal equals to length of original signal
