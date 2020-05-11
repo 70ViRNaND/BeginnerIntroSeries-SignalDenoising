@@ -19,7 +19,7 @@ Disclaimer:
   
   
   
-- The data is taken from Physionet Bank's MIT Arrhythmia Database here: 
+- The ECG data is taken from Physionet Bank's MIT Arrhythmia Database here: 
   https://archive.physionet.org/cgi-bin/atm/ATM
   
   
