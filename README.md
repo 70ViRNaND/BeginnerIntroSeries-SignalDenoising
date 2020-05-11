@@ -20,9 +20,20 @@ Disclaimer:
   
   
 - The Complete ECG data (noisy and clean) is taken from Physionet's ECG Database here: 
-  https://physionet.org/content/ecgiddb/1.0.0/
   
+  https://archive.physionet.org/cgi-bin/atm/ATM
+
+
+- When you open above link, please specify the following:
+    - Database : ECG-ID Database (ecgiddb)
+    - Record: Person_02/rec_19
+    - Signals : ECG I or ECG I Filtered
+    - Length,Time Format, Data Format : leave it as it is
+    - Toolbox : Export signals as CSV
+  Then you can click sample.csv to download the data.
+
   
-- More details about ECG Denoising code will be posted soon (Hopefully before end of may). 
+-  ECG Denoising code will be posted soon (Hopefully before end of May 2020). 
+
 
 - Use matlab R2015A or above
