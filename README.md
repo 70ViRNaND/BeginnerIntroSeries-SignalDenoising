@@ -19,18 +19,10 @@ Disclaimer:
   
   
   
-- The ECG data is taken from Physionet Bank's MIT Arrhythmia Database here: 
-  https://archive.physionet.org/cgi-bin/atm/ATM
+- The Complete ECG data (noisy and clean) is taken from Physionet's ECG Database here: 
+  https://physionet.org/content/ecgiddb/1.0.0/
   
   
-- When you open above link, make sure to specify the following:
-    - Database: MIT Arrhythmia Database
-    - Record: 214
-    - Signals: V1
-    - Length: 10 sec
-    - Time Format: seconds
-    - Data Format: standard
-    - Toolbox: Export signals as CSV
-
+- More details about ECG Denoising code will be posted soon (Hopefully before end of may). 
 
 - Use matlab R2015A or above
