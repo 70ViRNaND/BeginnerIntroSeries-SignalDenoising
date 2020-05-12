@@ -18,11 +18,11 @@ tSamp_3 = 0 : 1/fs_3 : tMax ;
 tSamp_4 = 0 : 1/fs_4 : tMax ;
 
 %create "continous" and sampled signals
-xCont = 1*sin(2*pi*f1*t)  + 1*cos(2*pi*f2*t) + 1*sin(2*pi*f3*t) ;
-xSamp_1 = 1*sin(2*pi*f1*tSamp_1) + 1*cos(2*pi*f2*tSamp_1) + 1*sin(2*pi*f3*tSamp_1);
-xSamp_2 = 1*sin(2*pi*f1*tSamp_2) + 1*cos(2*pi*f2*tSamp_2) + 1*sin(2*pi*f3*tSamp_2);
-xSamp_3 = 1*sin(2*pi*f1*tSamp_3) + 1*cos(2*pi*f2*tSamp_3) + 1*sin(2*pi*f3*tSamp_3);
-xSamp_4 = 1*sin(2*pi*f1*tSamp_4) + 1*cos(2*pi*f2*tSamp_4) + 1*sin(2*pi*f3*tSamp_4);
+xCont = 20*sin(2*pi*f1*t)  + 8*cos(2*pi*f2*t) + 1*sin(2*pi*f3*t) ;
+xSamp_1 = 20*sin(2*pi*f1*tSamp_1) + 8*cos(2*pi*f2*tSamp_1) + 1*sin(2*pi*f3*tSamp_1);
+xSamp_2 = 20*sin(2*pi*f1*tSamp_2) + 8*cos(2*pi*f2*tSamp_2) + 1*sin(2*pi*f3*tSamp_2);
+xSamp_3 = 20*sin(2*pi*f1*tSamp_3) + 8*cos(2*pi*f2*tSamp_3) + 1*sin(2*pi*f3*tSamp_3);
+xSamp_4 = 20*sin(2*pi*f1*tSamp_4) + 8*cos(2*pi*f2*tSamp_4) + 1*sin(2*pi*f3*tSamp_4);
 
 subplot(2,2,1);
 hold on;
@@ -73,25 +73,25 @@ if fs_1 < 2 * f1 || fs_1 < 2 * f2 || fs_1 < 2 * f3
    
    if ctrl1 < 0 && ctrl3 < 0
     %plot aliased sinusoids
-    plot(t,  -1*sin(2*pi*fAlias1*t)+ 1*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
+    plot(t,  -20*sin(2*pi*fAlias1*t)+ 8*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_1) ' Hz ']) ;
      legend('original signal','','sampled signal')
      
    elseif ctrl1 < 0 && ctrl3 >= 0
     %plot aliased sinusoids
-    plot(t,  -1*sin(2*pi*fAlias1*t)+ 1*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
+    plot(t,  -20*sin(2*pi*fAlias1*t)+ 8*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_1) ' Hz ']) ;
      legend('original signal','','sampled signal')
     
    elseif ctrl1 >= 0 && ctrl3 < 0
     %plot aliased sinusoids
-    plot(t,  1*sin(2*pi*fAlias1*t) + 1*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t) , 'r', 'linewidth', 2) ;
+    plot(t,  20*sin(2*pi*fAlias1*t) + 8*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t) , 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_1) ' Hz ']) ;
      legend('original signal','','sampled signal')
    
      elseif ctrl1 >= 0 && ctrl3 >= 0
     %plot aliased sinusoids
-    plot(t,  1*sin(2*pi*fAlias1*t) + 1*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
+    plot(t,  20*sin(2*pi*fAlias1*t) + 8*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_1) ' Hz ']) ;
      legend('original signal','','sampled signal')
   
@@ -154,25 +154,25 @@ if fs_2 < 2 * f1 || fs_2 < 2 * f2 || fs_2 < 2 * f3
    
    if ctrl1 < 0 && ctrl3 < 0
     %plot aliased sinusoids
-    plot(t,  -1*sin(2*pi*fAlias1*t)+ 1*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
+    plot(t,  -20*sin(2*pi*fAlias1*t)+ 8*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_2) ' Hz ']) ;
      legend('original signal','','sampled signal')
      
    elseif ctrl1 < 0 && ctrl3 >= 0
     %plot aliased sinusoids
-    plot(t,  -1*sin(2*pi*fAlias1*t)+ 1*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
+    plot(t,  -20*sin(2*pi*fAlias1*t)+ 8*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_2) ' Hz ']) ;
      legend('original signal','','sampled signal')
     
    elseif ctrl1 >= 0 && ctrl3 < 0
     %plot aliased sinusoids
-    plot(t,  1*sin(2*pi*fAlias1*t) + 1*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t) , 'r', 'linewidth', 2) ;
+    plot(t,  20*sin(2*pi*fAlias1*t) + 8*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t) , 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_2) ' Hz ']) ;
      legend('original signal','','sampled signal')
    
      elseif ctrl1 >= 0 && ctrl3 >= 0
     %plot aliased sinusoids
-    plot(t,  1*sin(2*pi*fAlias1*t) + 1*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
+    plot(t,  20*sin(2*pi*fAlias1*t) + 8*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_2) ' Hz ']) ;
      legend('original signal','','sampled signal')
   
@@ -233,25 +233,25 @@ if fs_3 < 2 * f1 || fs_3 < 2 * f2 || fs_3 < 2 * f3
    
    if ctrl1 < 0 && ctrl3 < 0
     %plot aliased sinusoids
-    plot(t,  -1*sin(2*pi*fAlias1*t)+ 1*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
+    plot(t,  -20*sin(2*pi*fAlias1*t)+ 8*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_3) ' Hz ']) ;
      legend('original signal','','sampled signal')
      
    elseif ctrl1 < 0 && ctrl3 >= 0
     %plot aliased sinusoids
-    plot(t,  -1*sin(2*pi*fAlias1*t)+ 1*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
+    plot(t,  -20*sin(2*pi*fAlias1*t)+ 8*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_3) ' Hz ']) ;
      legend('original signal','','sampled signal')
     
    elseif ctrl1 >= 0 && ctrl3 < 0
     %plot aliased sinusoids
-    plot(t,  1*sin(2*pi*fAlias1*t) + 1*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t) , 'r', 'linewidth', 2) ;
+    plot(t,  20*sin(2*pi*fAlias1*t) + 8*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t) , 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_3) ' Hz ']) ;
      legend('original signal','','sampled signal')
    
      elseif ctrl1 >= 0 && ctrl3 >= 0
     %plot aliased sinusoids
-    plot(t,  1*sin(2*pi*fAlias1*t) + 1*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
+    plot(t,  20*sin(2*pi*fAlias1*t) + 8*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_3) ' Hz ']) ;
      legend('original signal','','sampled signal')
   
@@ -313,25 +313,25 @@ if fs_4 < 2 * f1 || fs_4 < 2 * f2 || fs_4 < 2 * f3
    
    if ctrl1 < 0 && ctrl3 < 0
     %plot aliased sinusoids
-    plot(t,  -1*sin(2*pi*fAlias1*t)+ 1*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
+    plot(t,  -20*sin(2*pi*fAlias1*t)+ 8*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_4) ' Hz ']) ;
      legend('original signal','','sampled signal')
      
    elseif ctrl1 < 0 && ctrl3 >= 0
     %plot aliased sinusoids
-    plot(t,  -1*sin(2*pi*fAlias1*t)+ 1*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
+    plot(t,  -20*sin(2*pi*fAlias1*t)+ 8*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_4) ' Hz ']) ;
      legend('original signal','','sampled signal')
     
    elseif ctrl1 >= 0 && ctrl3 < 0
     %plot aliased sinusoids
-    plot(t,  1*sin(2*pi*fAlias1*t) + 1*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t) , 'r', 'linewidth', 2) ;
+    plot(t,  20*sin(2*pi*fAlias1*t) + 8*cos(2*pi*fAlias2*t) -1*sin(2*pi*fAlias3*t) , 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_4) ' Hz ']) ;
      legend('original signal','','sampled signal')
    
      elseif ctrl1 >= 0 && ctrl3 >= 0
     %plot aliased sinusoids
-    plot(t,  1*sin(2*pi*fAlias1*t) + 1*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
+    plot(t,  20*sin(2*pi*fAlias1*t) + 8*cos(2*pi*fAlias2*t) + 1*sin(2*pi*fAlias3*t), 'r', 'linewidth', 2) ;
     title(['Sampling Frequency ' num2str(fs_4) ' Hz ']) ;
      legend('original signal','','sampled signal')
   
