@@ -1,5 +1,5 @@
 # Basic Signal Denoising with Matlab
-This Repo contain files (also code) for Basic Signal Denoising.
+This Repo contain files (code included) for Basic Signal Denoising.
 
 
 Disclaimer: 
