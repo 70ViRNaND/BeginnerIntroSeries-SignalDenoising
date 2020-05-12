@@ -1,7 +1,7 @@
 %%  - RECTANGULAR WINDOW
 
 time = linspace(0,1,200);
-x = sin(2.*pi.*4.*time) + cos(2.*pi.*8.*time)+ sin(2.*pi.*16.*time);
+x = 20*sin(2.*pi.*4.*time) + 8*cos(2.*pi.*8.*time)+ sin(2.*pi.*16.*time);
 
 L  = 1/(time(2)-time(1));
 fs = L;
