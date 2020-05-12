@@ -23,7 +23,7 @@ subplot(3,1,1)
 plot(time,y) %plot original signal
 xlabel('time')
 ylabel('amplitude')
-title('sin(2\pi4t) + cos(2\pi8t)+ sin(2\pi16t)')
+title('20 sin(2\pi4t) + 8 cos(2\pi8t)+ sin(2\pi16t)')
 
 subplot(3,1,2)
 plot(w) %plot rectangular window
@@ -96,7 +96,7 @@ subplot(3,1,1)
 plot(time,y) %plot original signal
 xlabel('time')
 ylabel('amplitude')
-title('sin(2\pi4t) + cos(2\pi8t)+ sin(2\pi16t)')
+title('20 sin(2\pi4t) + 8 cos(2\pi8t)+ sin(2\pi16t)')
 
 subplot(3,1,2)
 plot(w) %plot rectangular window
