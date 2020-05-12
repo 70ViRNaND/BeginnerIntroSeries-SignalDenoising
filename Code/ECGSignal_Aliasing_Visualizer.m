@@ -1,9 +1,7 @@
-%[ecg,txt,raw] = xlsread('214m.csv');
-% [ECGnoisy,txtnoise,rawnoise] = xlsread('Rec2_Day19_Noisy.csv');
+
  [ECG,txtnoise,rawnoise] = xlsread('Rec2_Day19_Clean.csv');
  
-% ecg_ML2 = ecg(:,1);
-% ecg_V1 = ecg(:,2);
+
 ecg_V1 = ECG;
 clear ECGclean txtnoise rawnoise
 
