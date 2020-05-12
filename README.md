@@ -6,7 +6,7 @@ Disclaimer:
 
 
 
-- The main code is modified version of Asraf's version here: 
+- The main denoising code is modified version of Asraf's version here: 
   https://www.youtube.com/watch?v=st5Px3JtMSo&t=4s 
   and https://www.youtube.com/watch?v=7rJWP3F_Hx4&t=97s
 
