@@ -7,13 +7,13 @@ L = tmeasure/ts; %length of signal vector
 time = 0 : ts : tmeasure-ts; %time vector
 
 % Signal
-y = sin(2.*pi.*4.*time) + cos(2.*pi.*8.*time)+ sin(2.*pi.*16.*time);
+y = 20*sin(2.*pi.*4.*time) + 8*cos(2.*pi.*8.*time)+ sin(2.*pi.*16.*time);
 
 %Window
 cut_off_freq = 9;% Tunable as desired 
 cut_off_ratio = cut_off_freq/(fs/2); %fs/2 is called Nyquist Frequency
-w =  cut_off_ratio*sinc(cut_off_ratio*(-(L/2 - 1):L/2)); %exact definition of rectangular window
-filtered = conv(y,w);  %linear convolution cuz it's real vector
+w =  100*cut_off_ratio*sinc(cut_off_ratio*(-(L/2 - 1):L/2)); %exact definition of rectangular window
+filtered = 10*conv(y,w)/L;  %linear convolution cuz it's real vector
 subset_filtered = filtered(920:2919); %make sure length of filtered signal equals to length of original signal
 
 % Plot 1
@@ -54,7 +54,7 @@ frequency_window = Fs/2*linspace(0,1,L/2+1);
 
 % compute Hadamard multiplication (element-wise product) between fft's
 filtered_fft = signal_fft.*window_fft;
-amplitude_filtered_fft =  2*abs(filtered_fft(1:(L/2+1)));
+amplitude_filtered_fft =  4*abs(filtered_fft(1:(L/2+1)));
 frequency_filtered_fft = Fs/2*linspace(0,1,L/2+1);
 
 %Plot 2
@@ -80,13 +80,13 @@ L = tmeasure/ts; %length of signal vector
 time = 0 : ts : tmeasure-ts; %time vector
 
 % Signal
-y = sin(2.*pi.*4.*time) + cos(2.*pi.*8.*time)+ sin(2.*pi.*16.*time);
+y = 20*sin(2.*pi.*4.*time) + 8*cos(2.*pi.*8.*time)+ sin(2.*pi.*16.*time);
 
 %Window
 alpha = 10;
 order = 2000;
 w =  gausswin(order+1,alpha)'; %matlab definition of gaussian window
-filtered = conv(y,w);  %linear convolution cuz it's real vector 
+filtered = conv(y,w)/L;  %linear convolution cuz it's real vector 
 subset_filtered = filtered(1000:2999); %make sure length of filtered signal equals to length of original signal
 
 % Plot 1
@@ -105,7 +105,7 @@ ylabel('amplitude')
 title('gaussian window - alpha 10')
 
 subplot(3,1,3)
-plot(time,subset_filtered) %plot filtered signal
+plot(time,10*subset_filtered) %plot filtered signal
 xlabel('time')
 ylabel('amplitude')
 
@@ -127,7 +127,7 @@ frequency_window = Fs/2*linspace(0,1,L/2+1);
 
 % compute Hadamard multiplication (element-wise product) between fft's
 filtered_fft = signal_fft.*window_fft;
-amplitude_filtered_fft =  2*abs(filtered_fft(1:(L/2+1)));
+amplitude_filtered_fft =  4*abs(filtered_fft(1:(L/2+1)));
 frequency_filtered_fft = Fs/2*linspace(0,1,L/2+1);
 
 %Plot 2
