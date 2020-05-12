@@ -49,4 +49,4 @@ TODO:
   
   
   
-  - Upload digestable tutorial on PDF and MP4 format
+  - Upload digestable tutorial in PDF and MP4 format
