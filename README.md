@@ -45,8 +45,4 @@ TODO:
 
 
   
-  - Upload all ECG related code before end of May 2020
-  
-  
-  
   - Upload digestable tutorial in PDF and MP4 format
