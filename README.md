@@ -38,4 +38,4 @@ This Repo contain files and MATLAB code for Unconventional-Signal-Denoising.
 
 ### Disclaimer
 
-This Repo is only for *personal experiment*. 
+This Repo is only for my own *personal experiment* for learning practical aspects of Fourier Analysis. :)
