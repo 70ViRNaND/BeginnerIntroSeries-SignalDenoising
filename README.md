@@ -4,7 +4,7 @@
 This Repo contain files and MATLAB code for Unconventional-Signal-Denoising. 
 
 
-### Disclaimer: 
+### References: 
 
   1. The main denoising code is modified version of Asraf's version here: 
   https://www.youtube.com/watch?v=st5Px3JtMSo&t=4s 
@@ -36,7 +36,6 @@ This Repo contain files and MATLAB code for Unconventional-Signal-Denoising.
 
    7. Use matlab R2015A or above
 
+### Disclaimer
 
-### TODO: 
-
-   1. Upload short tutorial in the future....
+This Repo is only for *personal experiment*. 
